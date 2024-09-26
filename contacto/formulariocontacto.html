@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enciclopedia Médica</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="MedlinePlus Logo">
+	</a>
+            <h1>MedlinePlus</h1>
+            <p>Información de salud para usted</p>
+    </header>
+
+    <h2>Formulario de Contacto</h2>
+    <form action="respuestaformulariocontacto.html" method="post">
+        
+        <label for="asunto">Asunto (Requerido):</label>
+        <input type="text" id="asunto" name="asunto" required><br><br>
+
+        <label for="comentario">Comentario o Pregunta (Requerido):</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="yo_soy">Yo soy:</label>
+        <select id="yo_soy" name="yo_soy">
+            <option value="paciente">Paciente</option>
+            <option value="cientifico">Científico</option>
+            <option value="medico">Médico</option>
+            <option value="educador">Educador</option>
+            <option value="fabricante">Fabricante</option>
+            <option value="periodista">Periodista</option>
+        </select><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="otro" name="sexo" value="otro">
+        <label for="otro">Otro</label><br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="checkbox" id="informacion" name="informacion">
+        <label for="informacion">Deseo recibir más información</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>Para volver a la página principal pulsa <a href="../index.html">aquí</a>.
+    
+    <footer> 
+        <p><a>Eva Gutiérrez Sánchez</a> &copy; egs98@alu.ua.es</p>
+	<p><a>Alba Valdivia Yáñez</a> &copy; avy2@alu.ua.es</p>
+	<p>Universidad de Alicante</p>
+    </footer>
+</body>
+</html>
